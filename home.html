@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Matthew's Resume</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+  <link rel="stylesheet" href="./home.css">
+</head>
+
+
+<body>
+  <div class='wrapper'>
+  <div class="keyData">
+  <h1>MATTHEW THACKER</h1>
+  <h2>Frequently Flirt with Functions / Youth Advisor / Perpetual Learner </h2>
+  <h4>4622 Oyster Shell Road</h4>
+  <h4>South Jordan, UT 84095</h4>
+  <h4>mtvanguard@gmail.com</h4>
+  <h4>Cell: (801) 867-9768</h4>
+</div>
+    <!-- Stacked Layout -->
+    <div class="stacked">
+      <button class="button button--dirty" target="1">Tech Ability</button>
+      <button class="button" target="2">Education</button>
+      <button class="button" target="3">Key Skills</button>
+      <button class="button" target="4">References</button>
+      <button class="button" target="5">Work History</button>
+      <button class="button" target="6">Awards/Hobbies</button>
+      <button class="button" target="7">Random</button>
+    </div>
+
+    <div class="main">
+      <div id="div1" class="content active">
+        <header class="info__header">Tech</header>
+        
+        <p class="text">
+            <p><u><center>Languages/Tools In Progress</center></u></p>
+            <ul class="manycol">
+            <li>T-SQL</li>
+            <li>Angular</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>NodeJS</li>
+            <li>Dev Tools</li>
+            <li>VS Code IDE</li>
+            <li>Swagger</li>
+            <li>Postman</li>
+            <li>YouTrack</li>
+            <li>R</li>
+            <li>RStudio</li>
+            <li>PlanningPoker.com</li>
+            <li>Python</li>
+            <li>Sketch</li>
+            <li>iRise</li>
+            <li>Atlassian Software Suite</li>
+            <li>Statistical Analysis System (SAS)</li>
+
+            </ul>
+            <p><u><center>Concepts</center></u></p>
+            <ul class="manycol">
+                <li>Responsive_Design</li>
+                <li>OOD</li>
+                <li>REST APIs</li>
+                <li>HTTP Requests</li>   
+                <li>JSON</li>
+                <li>Normalization</li>
+                <li>Microservices</li>
+                <li>Agile Retrospectives</li>
+                <li>User Story Creation</li>
+                
+              </ul>
+        </p>
+      </div>
+      <div id="div2" class="content">
+        <header class="info__header">Education</header>
+        <p class="text">
+        <ul class="manycol">
+           <li>Business Administration USU 2015</li> 
+           <li>CodeCademy</li> 
+           <li>Free CodeCamp</li>
+           <li>CodeSchool</li> 
+           <li>PluralSight</li> 
+           <li>DataCamp</li> 
+           <li>Wesbos CSS GRID & JavaScript30</li>
+          </ul>
+        </p>
+      </div>
+      <div id="div3" class="content">
+        <header class="info__header">Key Skills</header>
+        <p class="text">
+            <ul>
+                <li>Perpetual Learner</li> 
+                <li>Excellent communicator - decade of customer service</li> 
+                <li>Lean Process enthusiast</li>
+                <li>Proactive</li> 
+               </ul>
+        </p>
+      </div>
+      <div id="div4" class="content">
+          <header class="info__header">References</header>
+          <p class="text">
+            <ul>
+              <li>Christina Fullbright: Manager</li>
+              <li>Brandon Peterson: Sr. Team Lead</li>
+              <li>Loren Spoklie: Customer Success Manager</li>
+            </ul>
+          </p>
+      </div>
+      <div id="div5" class="content">
+          <header class="info__header">Work History</header>
+          <p class="text">
+              <ul>
+                <li>ManagerPlus: Data Specialist/Solutions Engineer</li>
+                <li>EMC: Assoc. Business Systems Analyst</li>
+                <li>Marriott Vacation Club: Sr. Travel Advisor</li>
+                <li>ACS: Call Center Supervisor/Trainer</li>
+              </ul>
+          </p>
+      </div>
+      <div id="div6" class="content">
+          <header class="info__header">Awards/Hobbies</header>
+          <p class="text">
+              <ul>
+                  <li>Youth City Council Advisor</li>
+                  <li>Assist. Scout Master</li>
+                  <li>Politics & Current Events</li>
+                  <li>Employee of the Month</li> 
+                  <li>CourtHack 3rd place winner</li> 
+                  <li>5K winner Male Overall</li>
+                  <li>Eagle Scout</li> 
+                 </ul> </p>
+        </div>
+        <div id="div7" class="content">
+            <header class="info__header">Random</header>
+            <p class="text">
+                <img src="images/00004IMG_00004_BURST20170318213700.jpg" height="200" class="pic">
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="./app.js"></script>
+  <script>
+
+const content = jQuery(function(){
+                jQuery('.button').click(function(){
+                      jQuery('.content').hide();
+                      jQuery('#div'+$(this).attr('target')).show();
+                });
+        });
+  </script>
+  </body>
+
+</html>

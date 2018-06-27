@@ -1,0 +1,78 @@
+
+:root {
+    --blue: #0000FF;
+    --white: #f2f2f2;
+    --gray: #343436;
+    --green: #00b300;
+  }
+  
+  html {
+    /* border-box box model allows us to add padding and border to our elements without increasing their size */
+    box-sizing: border-box;
+    /* A system font stack so things load nice and quick! */
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma,
+    Sans-Serif;
+    font-weight: 900;
+    font-size: 15px;
+    color: white;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+  }
+  
+  /*
+    Inherit box-sizing: border-box; from our <html> selector
+    Better than applying box-sizing: border-box; directly to the * selector
+  */
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    background-image: url("./images/topography.svg"),
+      linear-gradient(110deg, #0000FF, #00b300);
+    background-size: 340px, auto;
+    min-height: calc(100vh - 100px);
+    margin: 50px;
+    background-attachment: fixed;
+    letter-spacing: -1px;
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: normal;
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  /* Buttons */
+  .button {
+    background: var(--gray);
+    color: white;
+    border: 0;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgba(0, 0, 0, 0.03);
+    border-radius: 5px;
+    font-size: 30px;
+    padding: 10px;
+    position: relative;
+  }
+
+  .button--dirty:before {
+    background: #00b300;
+    display: block;
+    content: '';
+    height: 4px;
+    width: calc(100% - 6px);
+    position: absolute;
+    left: 3px;
+    top: 3px;
+  }
+  
+  .button:hover {
+    background-color: #00b300;
+  }
+  
